@@ -1,11 +1,12 @@
 import React from 'react'
+import Number from './Number'
 
 export default class Counter extends React.Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            counter: 0,
+            counter: props.start,
             show: false,
             textValue: "ThisString"
         }
@@ -30,7 +31,7 @@ export default class Counter extends React.Component {
         return (
             <div className="counter">
                 <h2>My React Counter</h2>
-                <h3>{this.state.counter}</h3>
+                <Number counterNumber={this.state.counter}/>
                 <button onClick={this.incrementCounter}>
                     Click to increase +1
                 </button>
