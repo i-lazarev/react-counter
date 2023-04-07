@@ -2,6 +2,7 @@ import React from "react";
 import Counter from "./Counter";
 import logo from "./logo.svg";
 import "./App.css";
+//React-counter by persona
 
 function App() {
   return (
