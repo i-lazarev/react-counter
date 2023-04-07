@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>React-couter</h1>
         <Counter start={23} />
       </header>
     </div>
